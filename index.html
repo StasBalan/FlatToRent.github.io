@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flat to Rent</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+	<div id="scrollToTop">
+		<i class="fas fa-arrow-up btn_ontop"></i>
+	</div>
+	<div id="show">
+		<div class="cart">
+			<button id="select" class="select-btn"><i class="fas fa-star cart"></i><p id="select-count">0</p></button>
+		</div>
+		<div id="myModal1" class="modal1">
+			<div id="box1" class="d-flex">
+				
+			</div>
+		</div>
+	</div>
+	<header id="header">
+		<h1>Flats to rent</h1>
+	</header>
+	<div class="search">
+		<div class="search__all wrap">
+			<div><i class="fas fa-city icon__type"></i><input type="text" placeholder="Enter city" id="search__input" class="input__type"></div>
+			<select name="country" id="country" class="select__type">
+				<option value="1">United Kingdom</option>
+				<option value="2">France</option>
+				<option value="3">Mexico</option>
+				<option value="4">Brasilia</option>
+				<option value="5">Germany</option>
+				<option value="6">India</option>
+				<option value="7">Italia</option>
+				<option value="8">Spain</option>
+			</select>
+			<select name="listing_type" id="listing_type" class="select__type">
+				<option value="9">Buy</option>
+				<option value="10">Rent</option>
+			</select>
+			<select name="property_type" id="property_type" class="select__type">
+				<option value="11">Flat</option>
+				<option value="12">House</option>
+			</select>
+
+			<button type="button" id="btn">
+				<span>More filtars</span>
+				<span class="arrow">&#9660</span>
+			</button>
+			<div id="myModal2" class="modal2">
+				<div id="box2">
+					<h2>More Filters</h2>
+					<div><i class="fas fa-bed icon__type"></i><input type="text" placeholder="bedroom number" id="bedroom_number" class="input__type">
+					</div>
+					<div><i class="fas fa-bath icon__type"></i><input type="text" placeholder="bathroom number" id="bathroom_number" class="input__type">
+					</div>
+					<div><i class="fas fa-dollar-sign icon__type"></i><input type="text" placeholder="min price" id="price_min" class="input__type">
+					</div>
+					<div><i class="fas fa-dollar-sign icon__type"></i><input type="text" placeholder="max price" id="price_max" class="input__type">
+					</div>
+					<button id="apply">Apply filter</button>
+				</div>
+			</div>
+
+			<button id="search">Search</button>	
+		</div>
+	</div>
+	
+
+	<div id="all" class="all">
+		
+	
+	</div>
+
+	<div id="myModal" class="modal">
+		<div id="box" class="d-flex">
+			
+		</div>
+	</div>
+
+	<div class="lds-ellipsis" id="loader"><div></div><div></div><div></div><div></div></div>
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript">
+    </script>
+	<script src="js/index.js"></script>
+</body>
+</html>
